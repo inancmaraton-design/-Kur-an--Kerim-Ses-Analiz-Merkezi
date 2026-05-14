@@ -1,0 +1,46 @@
+2026-05-13 02:32:57.513 | DEBUG    | audio_analyzer:load_audio:51 - Yüklendi: C:/Users/inanc/AppData/Local/Temp/kuran_bridge_14141529106499565993.wav | sr=22050 | n_samples=1145088
+2026-05-13 02:32:57.513 | INFO     | main:build_response_json:77 - [001_Fatiha] Pipeline başlatıldı
+2026-05-13 02:33:02.605 | DEBUG    | audio_analyzer:extract_pitch:81 - Pitch: 1978 sesli frame / 2237 toplam
+2026-05-13 02:33:02.716 | DEBUG    | audio_analyzer:extract_mfcc:108 - MFCC shape: (39, 2237)
+2026-05-13 02:33:04.826 | INFO     | main:build_response_json:127 - UMAP girişi: (2237, 46)
+C:\Users\inanc\AppData\Local\Programs\Python\Python312\Lib\site-packages\umap\umap_.py:1945: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(f"n_jobs value {self.n_jobs} overridden to 1 by setting random_state. Use no seed for parallelism.")
+2026-05-13 02:33:18.652 | DEBUG    | audio_analyzer:to_3d_umap:289 - UMAP output shape: (2237, 3)
+2026-05-13 02:33:18.728 | DEBUG    | audio_analyzer:segment_by_silence:355 - Tespit edilen segment sayısı: 5
+2026-05-13 02:33:18.759 | SUCCESS  | main:build_response_json:167 - [001_Fatiha] Analiz tamamlandı: 2237 frame, 5 segment
+2026-05-13 02:33:19.183 | DEBUG    | audio_analyzer:load_audio:51 - Yüklendi: C:/Users/inanc/AppData/Local/Temp/kuran_bridge_11509702917161386388.wav | sr=22050 | n_samples=1145088
+2026-05-13 02:33:19.183 | INFO     | main:build_response_json:77 - [001_Fatiha] Pipeline başlatıldı
+2026-05-13 02:33:24.074 | DEBUG    | audio_analyzer:extract_pitch:81 - Pitch: 1978 sesli frame / 2237 toplam
+2026-05-13 02:33:24.124 | DEBUG    | audio_analyzer:extract_mfcc:108 - MFCC shape: (39, 2237)
+2026-05-13 02:33:26.140 | INFO     | main:build_response_json:127 - UMAP girişi: (2237, 46)
+C:\Users\inanc\AppData\Local\Programs\Python\Python312\Lib\site-packages\umap\umap_.py:1945: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(f"n_jobs value {self.n_jobs} overridden to 1 by setting random_state. Use no seed for parallelism.")
+2026-05-13 02:33:31.902 | DEBUG    | audio_analyzer:to_3d_umap:289 - UMAP output shape: (2237, 3)
+2026-05-13 02:33:31.978 | DEBUG    | audio_analyzer:segment_by_silence:355 - Tespit edilen segment sayısı: 5
+2026-05-13 02:33:32.003 | SUCCESS  | main:build_response_json:167 - [001_Fatiha] Analiz tamamlandı: 2237 frame, 5 segment
+Traceback (most recent call last):
+  File "C:\Users\inanc\Desktop\Kuran ı Kerim Windows Uygulama\backend\analyze_bridge.py", line 411, in main
+    req = json.loads(raw)
+          ^^^^^^^^^^^^^^^
+  File "C:\Users\inanc\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\inanc\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\inanc\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\inanc\Desktop\Kuran ı Kerim Windows Uygulama\backend\analyze_bridge.py", line 437, in <module>
+    main()
+  File "C:\Users\inanc\Desktop\Kuran ı Kerim Windows Uygulama\backend\analyze_bridge.py", line 413, in main
+    send_error(f"JSON parse hatası: {e}")
+  File "C:\Users\inanc\Desktop\Kuran ı Kerim Windows Uygulama\backend\analyze_bridge.py", line 58, in send_error
+    print(json.dumps(err, ensure_ascii=False), flush=True)
+OSError: [Errno 22] Invalid argument
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' encoding='utf-8'>
+OSError: [Errno 22] Invalid argument

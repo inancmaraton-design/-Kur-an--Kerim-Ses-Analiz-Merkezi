@@ -1,0 +1,27 @@
+# Kur'an-ı Kerim Akustik Fonetik Analiz Merkezi v7.0
+# Python 3.12 gereklidir
+
+# Sayısal işlemler
+numpy>=1.26.0
+scipy>=1.11.0
+
+# Akustik analiz
+librosa>=0.10.0
+soundfile>=0.12.0
+
+# Makine öğrenmesi
+scikit-learn>=1.4.0
+
+# İstatistik
+statsmodels>=0.14.0
+
+# Görselleştirme
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# Arapça metin işleme
+arabic-reshaper>=3.0.0
+python-bidi>=0.4.2
+
+# Yardımcı araçlar
+tqdm>=4.66.0

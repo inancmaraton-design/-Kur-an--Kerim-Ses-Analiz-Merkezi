@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-05-12T00:00:27.405870",
+  "total_tests": 4,
+  "passed": 4,
+  "failed": 0,
+  "results": [
+    {
+      "test": "Determinizm Testi",
+      "status": "✅ PASS",
+      "exit_code": 0
+    },
+    {
+      "test": "Negatif Kontrol Testi",
+      "status": "✅ PASS",
+      "exit_code": 0
+    },
+    {
+      "test": "Pozitif Kontrol Testi",
+      "status": "✅ PASS",
+      "exit_code": 0
+    },
+    {
+      "test": "Sensitivite Analizi",
+      "status": "✅ PASS",
+      "exit_code": 0
+    }
+  ]
+}

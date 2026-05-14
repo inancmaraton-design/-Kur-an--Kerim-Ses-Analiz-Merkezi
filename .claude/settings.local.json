@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(gradle build *)",
+      "Bash(gradlew build *)",
+      "mcp__ide__getDiagnostics"
+    ]
+  }
+}

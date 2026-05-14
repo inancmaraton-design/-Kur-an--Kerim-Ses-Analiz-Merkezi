@@ -1,0 +1,12 @@
+﻿.venv/
+__pycache__/
+*.pyc
+*.wav
+*.mp3
+reports/output/
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
+.gradle/
+build/
